@@ -3,6 +3,11 @@ Cookie Consent
 
 Javascript plugin allowing a website to comply with the EU cookie law.
 
+By the way
+----------
+We've released a new version of this. Check it out: [cookieconsent2](https://github.com/silktide/cookieconsent2)
+
+
 Features
 --------
 
