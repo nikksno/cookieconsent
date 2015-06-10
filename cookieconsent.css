@@ -166,7 +166,7 @@ CORE STYLES
 	padding: 0;
 	border: 0;
 	font-size: 10pt;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-weight: 400;
 	line-height: 1em;
 	text-align: left;
@@ -742,7 +742,7 @@ DARK STYLE
 	background-color: rgba(29, 29, 29, 0.95) !important;
 	color: #F5F5F5 !important;
 	border-bottom: 1px dotted #CCCCCC !important;
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-size: 11pt !important;
 }
 
@@ -973,7 +973,7 @@ DARK STYLE
 #cc-tag a,
 #cc-tag a:visited
 {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-size: 12pt !important;
 	background-color: #1d1d1d !important;
 	/*background-image: url(http://assets.cookieconsent.silktide.com/cookie-consent-box.png);*/
@@ -1065,7 +1065,7 @@ DARK STYLE
 
 #cc-modal
 {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-size: 11pt !important;
 }
 
@@ -1220,7 +1220,7 @@ DARK STYLE
 
 #cc-settingsmodal
 {
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-size: 11pt !important;
 }
 
