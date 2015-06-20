@@ -860,7 +860,7 @@ DARK STYLE
 }
 #cc-notification h2
 {
-	margin-right: 320px !important;
+	margin-right: 32% !important;
 }
 
 #cc-notification.cc-mobile h2
@@ -921,7 +921,7 @@ DARK STYLE
 	margin-right: 12px !important;
 	text-decoration: none !important;
 	font-size:12pt !important;
-	font-weight: 600;
+	font-weight: 400 !important;
 	letter-spacing: -0.05em;
 
 	border-radius: 5px !important;
