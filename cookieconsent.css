@@ -875,6 +875,7 @@ DARK STYLE
 	letter-spacing: -0.05em;
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
+	text-transform: none !important;
 }
 
 #cc-notification h2 a
@@ -1584,9 +1585,4 @@ DARK STYLE
 #cc-modal #cc-modal-wrapper li strong
 {
 	width: auto !important;
-}
-
-#cc-notification-wrapper h2 {
-	text-transform: none !important;
-}
 }
