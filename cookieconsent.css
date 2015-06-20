@@ -1585,3 +1585,8 @@ DARK STYLE
 {
 	width: auto !important;
 }
+
+#cc-notification-wrapper h2 {
+	text-transform: none !important;
+}
+}
