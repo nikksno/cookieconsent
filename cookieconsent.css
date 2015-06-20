@@ -741,7 +741,6 @@ DARK STYLE
 	background: rgb(29, 29, 29) !important;
 	background-color: rgba(29, 29, 29, 0.95) !important;
 	color: #F5F5F5 !important;
-	border-bottom: 1px dotted #CCCCCC !important;
 	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
 	font-size: 11pt !important;
 }
@@ -871,8 +870,8 @@ DARK STYLE
 #cc-notification h2 span,
 #cc-notification h2
 {
-	font-size: 14pt;
-	letter-spacing: -0.05em;
+	font-size: 12pt;
+	letter-spacing: 0px;
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
 	text-transform: none !important;
@@ -880,8 +879,8 @@ DARK STYLE
 
 #cc-notification h2 a
 {
-	letter-spacing: -0.05em;
-	font-size: 14pt;
+	letter-spacing: 0px;
+	font-size: 12pt;
 }
 
 #cc-notification h3
