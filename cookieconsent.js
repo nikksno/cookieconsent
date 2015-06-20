@@ -117,7 +117,7 @@ var cc =
         poweredBy: "Cookie Consent plugin for the EU cookie law",
         privacyPolicy: "Privacy policy",
         learnMore: "Learn more",
-        seeDetails: "see details",
+        seeDetails: "Learn more",
         seeDetailsImplicit: "change your settings",
         hideDetails: "hide details",
         savePreference: 'Save preference',
@@ -540,7 +540,7 @@ var cc =
                 }
             }
         });
-        jQuery('#cc-notification-wrapper h2').append(' - <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
+        jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
         if (cc.settings.consenttype == "implicit") {
             jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
         }
