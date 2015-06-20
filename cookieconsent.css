@@ -837,14 +837,16 @@ DARK STYLE
 #cc-notification a:visited
 {
 	text-decoration: none !important;
-	color: #31A8F0 !important;
-	font-size:11pt;
+	color: #88b6a3 !important;
+	font-size:12pt;
+	font-weight: 400 !important;
 }
 
 #cc-notification a:hover
 {
 	text-decoration: underline !important;
-	color: #B2F7FF !important;
+	color: #f94730 !important;
+	font-weight: 400 !important;
 }
 
 #cc-notification h2,
