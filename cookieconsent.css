@@ -1588,8 +1588,14 @@ DARK STYLE
 	width: auto !important;
 }
 
-@media only screen and (max-width: 768px) {
-#cc-notification h2 {
-font-size: 10px;
+@media only screen and (max-width: 604px) {
+#cc-notification h2 span {
+font-size: 10pt;
+}
+}
+
+@media only screen and (min-width: 604px) and (max-width: 768px) {
+#cc-notification h2 span {
+font-size: 11pt;
 }
 }
