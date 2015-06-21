@@ -1587,3 +1587,9 @@ DARK STYLE
 {
 	width: auto !important;
 }
+
+@media only screen and (max-width: 768px) {
+#cc-notification h2 {
+font-size: 10px;
+}
+}
