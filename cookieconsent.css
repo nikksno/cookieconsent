@@ -1603,13 +1603,13 @@ font-size: 11pt;
 }
 
 @media only screen and (max-width: 768px) {
-#cc-notification #cc-notification-wrapper
+#cc-notification #cc-notification-wrapper {
 padding: 20px 52px 0px 24px !important;
 }
 }
 
 @media only screen and (max-width: 768px) {
-.cc-notification-buttons
-right: 8px !important;
+#cc-notification ul.cc-notification-buttons {
+right: 3px !important;
 }
 }
