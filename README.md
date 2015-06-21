@@ -13,7 +13,6 @@ Features
 * Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
 
 Limitations
-
 --------
 
 * Still relies on jQuery as opposed to cc v2
