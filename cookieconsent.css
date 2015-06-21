@@ -878,7 +878,7 @@ DARK STYLE
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
 	text-transform: none !important;
-	text-align: justify;
+	text-align: justify !important;
 }
 
 #cc-notification h2 a
@@ -1604,12 +1604,12 @@ font-size: 11pt;
 
 @media only screen and (max-width: 768px) {
 #cc-notification #cc-notification-wrapper
-margin: 20px 52px 0px 24px !important;
+padding: 20px 52px 0px 24px !important;
 }
 }
 
 @media only screen and (max-width: 768px) {
-#cc-notification.cc-light ul.cc-notification-buttons
+#cc-notification ul.cc-notification-buttons
 margin-right: 12px !important;
 }
 }
