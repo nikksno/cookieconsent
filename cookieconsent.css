@@ -1589,13 +1589,13 @@ DARK STYLE
 }
 
 @media only screen and (max-width: 604px) {
-#cc-notification h2 span {
+#cc-notification h2 span, #cc-notification a, #cc-notification a:visited, #cc-notification a:hover {
 font-size: 10pt;
 }
 }
 
 @media only screen and (min-width: 604px) and (max-width: 768px) {
-#cc-notification h2 span {
+#cc-notification h2 span, #cc-notification a, #cc-notification a:visited, #cc-notification a:hover {
 font-size: 11pt;
 }
 }
