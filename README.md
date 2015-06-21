@@ -20,9 +20,14 @@ Limitations
 * Has a bunch of unused vestigial code left over from the original cc
 * Wanna fix this stuff? Have at it and go nuts!
 
+Live demo
+--------
+
+[AnotherMilan](https://anothermilan.net) [themed to the website's colors]
+
 Integration
 -----------
-As the devmasters instruct us to do, refer to the [cc v1 website](http://sitebeam.net/cookieconsent/) for detailed integration documentation and their simple [configuration wizard](http://sitebeam.net/cookieconsent/code/) to actually get it working. In the code you obtain just remember to change these three lines:
+As the devmasters instruct us to do, refer to the [cc v1 website](http://sitebeam.net/cookieconsent-v1/) for detailed integration documentation and their simple [configuration wizard](http://sitebeam.net/cookieconsent/code/) to actually get it working. In the code you obtain just remember to change these three lines:
 
 ```css
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
