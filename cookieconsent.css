@@ -879,6 +879,7 @@ DARK STYLE
 	font-weight: 400 !important;
 	text-transform: none !important;
 	text-align: justify !important;
+	line-height: normal !important;
 }
 
 #cc-notification h2 a
