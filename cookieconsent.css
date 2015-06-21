@@ -878,6 +878,7 @@ DARK STYLE
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
 	text-transform: none !important;
+	text-align: justify;
 }
 
 #cc-notification h2 a
