@@ -122,7 +122,7 @@ var cc =
         hideDetails: "hide details",
         savePreference: 'Save preference',
         saveForAllSites: 'Save for all sites',
-        allowCookies: 'That's ok',
+        allowCookies: "That's ok",
         allowCookiesImplicit: 'Close',
         allowForAllSites: 'Allow for all sites',
         customCookie: 'This website uses a custom type of cookie which needs specific approval',
