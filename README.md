@@ -46,10 +46,11 @@ to:
 Full usage
 -----------
 
-If you're the rough tough raw code kind of guy or girl and prefer going through tens of lines of code rather than rely on the fast and simple customizer the Master Creators have provided us with [see above], or in case their website goes down [ya never know!] here is the full code for the widget that you should implement in your website [headers already changed to point to this project rather than the original cc v1] with all of the non default options so as to fulfill your picky and control seaking developer attitude. Feel free to remove the lines corresponding to any custom option you don't want and to change the strings used throughout the widget: the function description is followed by the default text [in brackets] in the string arguments themselves [you're welcome]. Have fun and don't forget to make it your own!
+If you're the rough tough raw code kind of guy or girl and prefer going through tens of lines of code rather than relying on the fast and simple customizer the Master Creators have provided us with [see above], or in case their website goes down [ya never know!] here is the full code for the widget that you should implement in your website [headers already changed to point to this project rather than the original cc v1] with all of the non default options so as to fulfill your picky and control seaking developer attitude. Feel free to remove the lines corresponding to any custom option you don't want and to change the strings used throughout the widget: the function descriptions are followed by the default texts [in brackets] in the string arguments themselves [you're welcome]. Have fun and don't forget to make it your own!
 
-Important! The design changes I've made from the original cc v1 have only been tested by me on the Bottom Bar. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
+Important! The design changes I've made from the original cc v1 have only been tested by me on the "bottom bar" style [already selected via custom option in the code below]. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
 
+```html
     <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
 <script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
@@ -131,7 +132,7 @@ cc.initialise({
 // ]]>
 </script>
 <!-- End Cookie Consent plugin -->
-
+```
 
 Credits
 -------
