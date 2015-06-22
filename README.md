@@ -51,7 +51,7 @@ If you're the rough tough raw code kind of guy or girl and prefer going through 
 Important! The design changes I've made from the original cc v1 have only been tested by me on the "bottom bar" style [already selected via custom option in the code below]. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
 
 ```html
-    <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
+<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
 <script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
 // <![CDATA[
@@ -76,13 +76,20 @@ cc.initialise({
 			title: 'Strictly necessary title',
 			description: 'Strictly necessary description',
 			link: 'Strictly necessary link'
+		},
+		mycookieid: {
+			title: 'My custom cookie title',
+			description: 'My custom cookie description'
+			link: 'My custom cookie link'
 		}
-	},
 	settings: {
-		bannerPosition: "bottom",
+		consenttype: "explicit",		// other options: "implicit"
+		style: "dark",				// other options: "light"
+		bannerPosition: "bottom",		// other options: "top", "push" [not tested with this fork]
+		tagPosition: "bottom-right"		// other options: combine "top" and "bottom" with "left" and "right" separated by a dash like in the example
 		onlyshowwithineu: true,
-		ipinfodbkey: 'IPInfoDB-API-Key',
-		refreshOnConsent: true,
+		ipinfodbkey: 'IPInfoDB-API-Key',	// optional, only necessary if "onlyshowwithineu" is set to "true"
+		refreshOnConsent: true,			
 		ignoreDoNotTrack: true,
 		disableallsites: true,
 		useSSL: true
