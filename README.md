@@ -43,27 +43,95 @@ to:
 <script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
 ```
 
-Basic usage
+Full usage
 -----------
 
-    <link rel="stylesheet" type="text/css" href="cookieconsent.css"/>
-    <script type="text/javascript" src="cookieconsent.js"></script>
+If you're the rough tough raw code kind of guy or girl and prefer going through tens of lines of code rather than rely on the fast and simple customizer the Master Creators have provided us with [see above], or in case their website goes down [ya never know!] here is the full code for the widget that you should implement in your website [headers already changed to point to this project rather than the original cc v1] with all of the non default options so as to fulfill your picky and control seaking developer attitude. Feel free to remove the lines corresponding to any custom option you don't want and to change the strings used throughout the widget: the function description is followed by the default text [in brackets] in the string arguments themselves [you're welcome]. Have fun and don't forget to make it your own!
 
-    <script type="text/javascript">
-    // <![CDATA[
-    cc.initialise({
-    	cookies: {
-    		social: {},
-    		analytics: {},
-    		advertising: {},
-    		necessary: {}
-    	},
-    	settings: {
-    		consenttype: "implicit"
-    	}
-    });
-    // ]]>
-    </script>
+Important! The design changes I've made from the original cc v1 have only been tested by me on the Bottom Bar. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
+
+    <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
+<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
+<script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
+// <![CDATA[
+cc.initialise({
+	cookies: {
+		social: {
+			title: 'Social media title',
+			description: 'Social media description',
+			link: 'Social media link'
+		},
+		analytics: {
+			title: 'Analytics title',
+			description: 'Analytics description',
+			link: 'Analytics link'
+		},
+		advertising: {
+			title: 'Advertising title',
+			description: 'Advertising description',
+			link: 'Advertising link'
+		},
+		necessary: {
+			title: 'Strictly necessary title',
+			description: 'Strictly necessary description',
+			link: 'Strictly necessary link'
+		}
+	},
+	settings: {
+		bannerPosition: "bottom",
+		onlyshowwithineu: true,
+		ipinfodbkey: 'IPInfoDB-API-Key',
+		refreshOnConsent: true,
+		ignoreDoNotTrack: true,
+		disableallsites: true,
+		useSSL: true
+	},
+	strings: {
+		socialDefaultTitle: 'Social media title [Social med,ia]',
+		socialDefaultDescription: 'Social media description [Face,book, Twitter and other social, websites need to know who you, are to work properly.]',
+		analyticsDefaultTitle: 'Analytics title [Analytics]',
+		analyticsDefaultDescription: 'Analytics description [We anon,ymously measure your use of th,is website to improve your exp,erience.]',
+		advertisingDefaultTitle: 'Advertising title [Advertising,]',
+		advertisingDefaultDescription: 'Advertising description [Adver,ts will be chosen for you auto,matically based on your past b,ehaviour and interests.]',
+		necessaryDefaultTitle: 'Strictly necessary title [Stri,ctly necessary]',
+		necessaryDefaultDescription: 'Strictly necessary [Some cooki,es on this website are strictl,y necessary and cannot be disa,bled.]',
+		defaultTitle: 'Default cookie title',
+		defaultDescription: 'Default cookie description',
+		learnMore: 'Cookie help link text [Learn m,ore]',
+		closeWindow: 'Close window text [Close windo,w]',
+		notificationTitle: 'Notification title text [Your ,experience on this site will b,e improved by allowing cookies,]',
+		notificationTitleImplicit: 'Notification title text for im,plicit consent [We use cookies, to ensure you get the best ex,perience on our website]',
+		customCookie: 'Custom cookie title text [This, website uses a custom type of, cookie which needs specific a,pproval]',
+		seeDetails: 'See details link [see details]',
+		seeDetailsImplicit: 'See details link for implicit ,consent [change your settings]',
+		hideDetails: 'Hide details link [hide detail,s]',
+		allowCookies: 'Allow cookies button [Allow co,okies]',
+		allowCookiesImplicit: 'Allow cookies button for impli,cit consent [Close]',
+		allowForAllSites: 'Allow cookies for all sites bu,tton [Allow for all sites]',
+		savePreference: 'Save preference button [Save p,reference]',
+		saveForAllSites: 'Save preferences for all sites, [Save for all sites]',
+		privacySettings: 'Privacy Tag text [Privacy sett,ings]',
+		privacySettingsDialogTitleA: 'Privacy dialog title large par,t [Privacy settings]',
+		privacySettingsDialogTitleB: 'Privacy dialog title small par,t [for this website]',
+		privacySettingsDialogSubtitle: 'Privacy dialog subtitle [Some ,features of this website need ,your consent to remember who y,ou are.]',
+		changeForAllSitesLink: 'Change settings for all websit,es link [Change settings for a,ll websites]',
+		preferenceUseGlobal: 'Cookie option - Use global set,ting [Use global setting]',
+		preferenceConsent: 'Cookie option - I consent [I c,onsent]',
+		preferenceDecline: 'Cookie option - I decline [I d,ecline]',
+		notUsingCookies: 'No cookies warning [This websi,te does not use any cookies.]',
+		allSitesSettingsDialogTitleA: 'Global dialog title large part, [Privacy settings]',
+		allSitesSettingsDialogTitleB: 'Global dialog title small part, [for all websites]',
+		allSitesSettingsDialogSubtitle: 'Global dialog subtitle [You ma,y consent to these cookies for, all websites that use this pl,ugin.]',
+		backToSiteSettings: 'Back to website settings link ,[Back to website settings]',
+		preferenceAsk: 'Cookie option - Ask me each ti,me [Ask me each time]',
+		preferenceAlways: 'Cookie option - Always allow [,Always allow]',
+		preferenceNever: 'Cookie option - Never allow [N,ever allow]'
+	}
+});
+// ]]>
+</script>
+<!-- End Cookie Consent plugin -->
+
 
 Credits
 -------
