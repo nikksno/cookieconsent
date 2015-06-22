@@ -39,8 +39,8 @@ to:
 
 ```css
 <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/nikksno/cookieconsent/master/cookieconsent.css"/>
-<script type="text/javascript" src="https://cdn.rawgit.com/nikksno/cookieconsent/master/cookieconsent.js">
+<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
+<script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
 ```
 
 Basic usage
