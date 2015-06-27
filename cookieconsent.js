@@ -1314,3 +1314,12 @@ WebFontConfig = {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
 })();
+
+/**
+ * Added by nikksno
+ * Increase buttons bar right margin if banner height increases to accomodate two text lines
+**/
+
+if ($('#cc-notification').height() >= 30) {
+    jQuery('#cc-notification ul.cc-notification-buttons').animate({right: "42px"}, 400);
+}
