@@ -1,4 +1,4 @@
-Cookie Consent
+cookienundrum
 ==============
 
 The definitive solution to the absurd cookie law that has everything you need and is fast and simple to deploy. Silktide's original cookieconsent v1 had all the features you could have possibly imagined but most of them were discontinued in v2 due to limited adoption. This fork backports v2's responsive and elegant design with fanatical attention to detail while keeping all of v1's customizable options working.
@@ -7,10 +7,15 @@ Features
 --------
 
 * Fully functional and beautifully designed
+* Fun and easy to customize
 * Free and open source
+* Allows for implicit or explicit consent aquisition from the user and temporarily blocks cookies if needed
+* Allows users to opt into cookies for all websites running this script
+* Allows you to prevent the banner from showing if the user appears to be outside the EU
 * Developed by actual web designers [with a few refinements added in by an amateur computer freak]
 * Has all of the original [cookieconsent](https://github.com/silktide/cookieconsent) features
 * Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
+* Is awesome. Period.
 
 Limitations
 --------
@@ -38,9 +43,9 @@ As the devmasters instruct us to do, refer to the [cc v1 website](http://sitebea
 to:
 
 ```css
-<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
-<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
-<script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
+<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
+<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
+<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.css">
 ```
 
 Full usage
@@ -51,9 +56,9 @@ If you're the rough tough raw code kind of guy or girl and prefer going through 
 Important! The design changes I've made from the original cc v1 have only been tested by me on the "bottom bar" style [already selected via custom option in the code below]. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
 
 ```html
-<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookieconsent -->
-<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookieconsent/cookieconsent.css"/>
-<script type="text/javascript" src="https://nikksno.github.io/cookieconsent/cookieconsent.css">
+<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
+<link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
+<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.css">
 // <![CDATA[
 cc.initialise({
 	cookies: {
