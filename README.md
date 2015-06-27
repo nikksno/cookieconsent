@@ -59,6 +59,7 @@ Important! The design changes I've made from the original cc v1 have only been t
 <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
 <script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.css">
+<script type="text/javascript">
 // <![CDATA[
 cc.initialise({
 	cookies: {
