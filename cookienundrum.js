@@ -77,7 +77,8 @@ var cc =
         refreshOnConsent: false,
         style: "dark",
         bannerPosition: "top",
-        clickAnyLinkToConsent: false,
+        clickAnyLinkToConsent: true,
+        scrollToConsent: true,
         privacyPolicy: false,
         collectStatistics: false,
         tagPosition: 'bottom-right',
@@ -594,6 +595,9 @@ var cc =
         if (cc.settings.clickAnyLinkToConsent) {
             jQuery("a").filter(':not(.cc-link)').click(cc.onlocalconsentgiven);
         }
+        if(cc.settings.scrollToConsent) {
++            jQuery(window).on('mousewheel DOMMouseScroll wheel', cc.onlocalconsentgiven);
++        }
         if (allcustom) {
             jQuery('#cc-notification h2 span').html(cc.strings.customCookie);
             jQuery('#cc-approve-button-allsites').hide();
@@ -793,6 +797,9 @@ var cc =
         if (cc.settings.clickAnyLinkToConsent) {
             jQuery("a").filter(':not(.cc-link)').unbind("click");
         }
+        if (cc.settings.scrollToConsent) {
++            jQuery(window).unbind('mousewheel DOMMouseScroll wheel');
++        }
         cc.allagree = true;
         jQuery.each(cc.cookies, function (key, value) {
             if (!value.approved && !value.asked) {
@@ -867,6 +874,9 @@ var cc =
             if (cc.settings.clickAnyLinkToConsent) {
                 jQuery("a").filter(':not(.cc-link)').unbind("click");
             }
+            if (cc.settings.scrollToConsent) {
++                jQuery(window).unbind('mousewheel DOMMouseScroll wheel');
++            }
             jQuery.each(cc.cookies, function (key, value) {
                 if (!value.approved && !value.asked) {
                     if (enableall || jQuery('#cc-checkbox-' + key).is(':checked')) {
