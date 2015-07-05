@@ -79,7 +79,7 @@ var cc =
         bannerPosition: "top",
         clickAnyLinkToConsent: true,
         scrollToConsent: true,
-        privacyPolicy: true,
+        privacyPolicy: false,
         collectStatistics: false,
         tagPosition: 'bottom-right',
         useSSL: false,
@@ -506,7 +506,7 @@ var cc =
         }
         jQuery('#cc-notification-logo').hide();
         if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-moreinformation').prepend('<a href="' + cc.settings.privacyPolicy + '">' + cc.strings.privacyPolicy + '</a> | ');
+            jQuery('#cc-notification-moreinfo').prepend('<a href="' + cc.settings.privacyPolicy + '">' + cc.strings.privacyPolicy + '</a> | ');
         }
         jQuery('#cc-notification').addClass(cc.settings.style).addClass(cc.settings.bannerPosition);
         bannerh = jQuery('#cc-notification').height();
