@@ -37,7 +37,7 @@ As the devmasters instruct us to do, refer to the [cc v1 website](http://sitebea
 ```css
 <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
 <link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/current/style.min.css"/>
-<script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js">
+<script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js"></script>
 ```
 
 to:
@@ -45,7 +45,7 @@ to:
 ```css
 <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
-<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.css">
+<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.js"></script>
 ```
 
 Full usage
@@ -58,7 +58,7 @@ Important! The design changes I've made from the original cc v1 have only been t
 ```html
 <!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
-<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.css">
+<script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.js"></script>
 <script type="text/javascript">
 // <![CDATA[
 cc.initialise({
