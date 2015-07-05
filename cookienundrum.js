@@ -79,7 +79,7 @@ var cc =
         bannerPosition: "top",
         clickAnyLinkToConsent: true,
         scrollToConsent: true,
-        privacyPolicy: false,
+        privacyPolicy: true,
         collectStatistics: false,
         tagPosition: 'bottom-right',
         useSSL: false,
