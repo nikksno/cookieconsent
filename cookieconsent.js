@@ -80,8 +80,7 @@ var cc =
         privacyPolicy: false,
         collectStatistics: false,
         tagPosition: 'bottom-right',
-        useSSL: false,
-        serveraddr: 'http://cookieconsent.silktide.com/',
+        serveraddr: 'https://cookieconsent.silktide.com/',
         clearprefs: false,
         consenttype: 'explicit',
         onlyshowbanneronce: false,
@@ -312,9 +311,6 @@ var cc =
         }
         cc.settings.style = "cc-" + cc.settings.style;
         cc.settings.bannerPosition = "cc-" + cc.settings.bannerPosition;
-        if (cc.settings.useSSL) {
-            cc.settings.serveraddr = 'https://cookieconsent.silktide.com/';
-        }
         if (window.jQuery) {
             cc.setupcomplete = true;
             cc.setup();
@@ -467,12 +463,12 @@ var cc =
             '<div id="cc-notification-wrapper">' +
             '<h2><span>' + cc.strings.notificationTitle + '</span></h2>' +
             '<div id="cc-notification-permissions">' +
-            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
+            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="https://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
             '</div>' +
             '<ul class="cc-notification-buttons">' +
 
             '<li>' +
-            '<a class="cc-link" href="http://cookieconsent.silktide.com" id="cc-approve-button-allsites">' + cc.strings.allowForAllSites + '</a>' +
+            '<a class="cc-link" href="https://cookieconsent.silktide.com" id="cc-approve-button-allsites">' + cc.strings.allowForAllSites + '</a>' +
             '</li>' +
             '<li>' +
             '<a class="cc-link" href="#" id="cc-approve-button-thissite">' + cc.strings.allowCookies + '</a>' +
@@ -629,7 +625,7 @@ var cc =
                     cc.settings.hideprivacysettingstab = true;
                 }
             } else {
-                jQuery.getScript("http://api.ipinfodb.com/v3/ip-country/?key=" + cc.settings.ipinfodbkey + "&format=json&callback=cc.locationcallback");
+                jQuery.getScript("https://api.ipinfodb.com/v3/ip-country/?key=" + cc.settings.ipinfodbkey + "&format=json&callback=cc.locationcallback");
                 return;
             }
         }
@@ -931,7 +927,7 @@ var cc =
             '<div id="cc-modal-footer-buttons">' +
 
             '<p id="cc-modal-global"><a class="cc-link" href="#" title="' + cc.strings.changeForAllSitesLink + '"><span>' + cc.strings.changeForAllSitesLink + '</span></a></p></div>' +
-            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
+            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="https://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
             '<div class="cc-clear"></div>' +
             '</div>' +
             '</div>';
@@ -1172,7 +1168,7 @@ var cc =
             '<div id="cc-settingsmodal-footer-buttons">' +
             '<p id="cc-settingsmodal-secondclosebutton" class="cc-settingsmodal-closebutton"><a class="cc-link" href="#" title="' + buttontext + '"><span>' + buttontext + '</span></a></p>' +
             '</div>' +
-            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="http://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
+            '<a id="cc-notification-logo" class="cc-logo" target="_blank" href="https://silktide.com/cookieconsent" title="' + cc.strings.poweredBy + '"><span>' + cc.strings.poweredBy + '</span></a> ' +
             '</div>' +
             '</div>';
         jQuery('body').prepend(data);
