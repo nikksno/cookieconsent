@@ -1389,9 +1389,10 @@ DARK STYLE
 	{
 		border-bottom: 0!important;
 		max-height: 100%!important;
-		overflow: scroll!important;
+		overflow:auto!important;	
+		overflow-y: scroll!important;
+		-webkit-overflow-scrolling: touch;
 	}
-
 	#cc-modal #cc-modal-wrapper .cc-getforsite
 	{
 		position: relative !important;
@@ -1408,7 +1409,9 @@ DARK STYLE
 		left: 0 !important;
 		max-height: 100% !important;
 		z-index: 999999999999 !important;
-
+		overflow:auto!important;	
+		overflow-y: scroll!important;
+		-webkit-overflow-scrolling: touch;
 	}
 
 	#cc-modal a.cc-logo,
@@ -1595,5 +1598,10 @@ DARK STYLE
 	{
 		margin-top: 10px !important;
 		float: none !important;
+	}
+
+	/*Font size*/
+	#cc-modal-wrapper h2 {
+		font-size:18px!important;
 	}
 }
