@@ -873,7 +873,7 @@ DARK STYLE
 #cc-notification h2 span,
 #cc-notification h2
 {
-	font-size: 12pt;
+	font-size: 12pt !important;
 	letter-spacing: 0px;
 	margin-bottom: 20px !important;
 	font-weight: 400 !important;
@@ -1592,25 +1592,38 @@ DARK STYLE
 }
 
 @media only screen and (max-width: 604px) {
-#cc-notification h2 span, #cc-notification a, #cc-notification a:link, #cc-notification a:visited, #cc-notification a:hover, #cc-notification a:active {
+#cc-notification h2,
+#cc-notification h2 span,
+#cc-notification a,
+#cc-notification a:link,
+#cc-notification a:visited,
+#cc-notification a:hover,
+#cc-notification a:active {
+
 font-size: 10pt;
-}
-}
+
+} }
 
 @media only screen and (min-width: 604px) and (max-width: 768px) {
-#cc-notification h2 span, #cc-notification a, #cc-notification a:link, #cc-notification a:visited, #cc-notification a:hover, #cc-notification a:active {
+#cc-notification h2,
+#cc-notification h2 span,
+#cc-notification a,
+#cc-notification a:link,
+#cc-notification a:visited,
+#cc-notification a:hover,
+#cc-notification a:active {
+
 font-size: 11pt;
-}
-}
+
+	
+} }
 
 @media only screen and (max-width: 1548px) {
 #cc-notification #cc-notification-wrapper {
 padding: 20px 53px 0px 24px !important;
-}
-}
+} }
 
 @media only screen and (max-width: 1548px) {
 #cc-notification ul.cc-notification-buttons {
 right: 12px !important;
-}
-}
+} }
