@@ -505,9 +505,7 @@ var cc =
             jQuery('#cc-approve-button-allsites').hide();
         }
         jQuery('#cc-notification-logo').hide();
-        if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-moreinfo').prepend('Hello world');
-        }
+        jQuery('#cc-notification-moreinfo').prepend('<a href="' + cc.settings.privacyPolicy + '">' + cc.strings.privacyPolicy + '</a> | ');
         jQuery('#cc-notification').addClass(cc.settings.style).addClass(cc.settings.bannerPosition);
         bannerh = jQuery('#cc-notification').height();
         jQuery('#cc-notification').hide();
