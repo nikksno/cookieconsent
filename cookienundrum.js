@@ -539,12 +539,12 @@ var cc =
                 }
             }
         });
+        if (cc.settings.privacyPolicy) {
+            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a>');
+        }
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
         if (cc.settings.consenttype == "implicit") {
             jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
-        }
-        if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a>');
         }
         jQuery('#cc-notification-moreinfo').click(function () {
             if (jQuery(this).html() == cc.strings.seeDetails || jQuery(this).html() == cc.strings.seeDetailsImplicit) {
