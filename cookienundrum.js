@@ -506,9 +506,6 @@ var cc =
             jQuery('#cc-approve-button-allsites').hide();
         }
         jQuery('#cc-notification-logo').hide();
-        if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-moreinfo').before('<a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a> | ');
-        }
         jQuery('#cc-notification').addClass(cc.settings.style).addClass(cc.settings.bannerPosition);
         bannerh = jQuery('#cc-notification').height();
         jQuery('#cc-notification').hide();
@@ -545,6 +542,9 @@ var cc =
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
         if (cc.settings.consenttype == "implicit") {
             jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
+        }
+        if (cc.settings.privacyPolicy) {
+            jQuery('#cc-notification-moreinfo').before('<a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a> | ');
         }
         jQuery('#cc-notification-moreinfo').click(function () {
             if (jQuery(this).html() == cc.strings.seeDetails || jQuery(this).html() == cc.strings.seeDetailsImplicit) {
