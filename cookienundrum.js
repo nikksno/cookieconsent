@@ -80,6 +80,7 @@ var cc =
         clickAnyLinkToConsent: true,
         scrollToConsent: true,
         privacyPolicy: true,
+        moreInfo: true,
         collectStatistics: false,
         tagPosition: 'bottom-right',
         useSSL: false,
@@ -542,7 +543,9 @@ var cc =
         if (cc.settings.privacyPolicy) {
             jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a>');
         }
+        if (cc.settings.moreInfo) {
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
+        }
         if (cc.settings.consenttype == "implicit") {
             jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
         }
