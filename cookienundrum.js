@@ -541,7 +541,7 @@ var cc =
             }
         });
         if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '" target="_blank">' + cc.strings.privacyPolicy + '</a>');
+            jQuery('#cc-notification-wrapper h2 span').after(' | <a id="privacypolicy-link" href="' + cc.strings.privacyPolicyLink + '" target="_blank">' + cc.strings.privacyPolicy + '</a>');
         }
         if (cc.settings.moreInfo) {
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
@@ -597,7 +597,7 @@ var cc =
 
         jQuery('#cc-approve-button-thissite').click(cc.onlocalconsentgiven);
         if (cc.settings.clickAnyLinkToConsent) {
-            jQuery("a").filter(':not(.cc-link)').click(cc.onlocalconsentgiven);
+            jQuery("a").filter(':not(.cc-link, #privacypolicy-link)').click(cc.onlocalconsentgiven);
         }
         if(cc.settings.scrollToConsent) {
             jQuery(window).on('mousewheel DOMMouseScroll wheel', cc.onlocalconsentgiven);
