@@ -118,7 +118,7 @@ var cc =
         notificationTitleImplicit: "We use cookies to ensure you get the best experience on our website",
         poweredBy: "Cookie Consent plugin for the EU cookie law",
         privacyPolicy: "Privacy policy",
-        privacyPolicyLink: "https://osp.cx/",
+        privacyPolicyLink: "/privacy",
         learnMore: "Learn more",
         seeDetails: "see details",
         seeDetailsImplicit: "change your settings",
@@ -541,7 +541,7 @@ var cc =
             }
         });
         if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a>');
+            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '" target="_blank">' + cc.strings.privacyPolicy + '</a>');
         }
         if (cc.settings.moreInfo) {
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
