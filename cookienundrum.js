@@ -79,7 +79,7 @@ var cc =
         bannerPosition: "top",
         clickAnyLinkToConsent: true,
         scrollToConsent: true,
-        privacyPolicy: true,
+        cookiePolicy: true,
         moreInfo: true,
         collectStatistics: false,
         tagPosition: 'bottom-right',
@@ -117,8 +117,8 @@ var cc =
         notificationTitle: "Your experience on this site will be improved by allowing cookies",
         notificationTitleImplicit: "We use cookies to ensure you get the best experience on our website",
         poweredBy: "Cookie Consent plugin for the EU cookie law",
-        privacyPolicy: "Privacy policy",
-        privacyPolicyLink: "/privacy",
+        cookiePolicy: "Privacy policy",
+        cookiePolicyLink: "/privacy",
         learnMore: "Learn more",
         seeDetails: "see details",
         seeDetailsImplicit: "change your settings",
@@ -540,8 +540,8 @@ var cc =
                 }
             }
         });
-        if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-wrapper h2 span').after(' | <a id="privacypolicy-link" href="' + cc.strings.privacyPolicyLink + '" target="_blank">' + cc.strings.privacyPolicy + '</a>');
+        if (cc.settings.cookiePolicy) {
+            jQuery('#cc-notification-wrapper h2 span').after(' | <a id="cookiePolicy-link" href="' + cc.strings.cookiePolicyLink + '" target="_blank">' + cc.strings.cookiePolicy + '</a>');
         }
         if (cc.settings.moreInfo) {
         jQuery('#cc-notification-wrapper h2').append('   |   <a class="cc-link" href="#" id="cc-notification-moreinfo">' + cc.strings.seeDetails + '</a>');
@@ -597,7 +597,7 @@ var cc =
 
         jQuery('#cc-approve-button-thissite').click(cc.onlocalconsentgiven);
         if (cc.settings.clickAnyLinkToConsent) {
-            jQuery("a").filter(':not(.cc-link, #privacypolicy-link)').click(cc.onlocalconsentgiven);
+            jQuery("a").filter(':not(.cc-link, #cookiePolicy-link)').click(cc.onlocalconsentgiven);
         }
         if(cc.settings.scrollToConsent) {
             jQuery(window).on('mousewheel DOMMouseScroll wheel', cc.onlocalconsentgiven);
