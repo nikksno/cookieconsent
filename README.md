@@ -43,7 +43,7 @@ As the devmasters instruct us to do, refer to the [cc v1 website](http://sitebea
 to:
 
 ```css
-<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
+<!-- Begin cookienundrum plugin | https://github.com/nikksno/cookienundrum -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
 <script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.js"></script>
 ```
@@ -56,7 +56,7 @@ If you're the rough tough raw code kind of guy or girl and prefer going through 
 Important! The design changes I've made from the original cc v1 have only been tested by me on the "bottom bar" style [already selected via custom option in the code below]. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
 
 ```html
-<!-- Begin cookieconsent plugin | https://github.com/nikksno/cookienundrum -->
+<!-- Begin cookienundrum plugin | https://github.com/nikksno/cookienundrum -->
 <link rel="stylesheet" type="text/css" href="https://nikksno.github.io/cookienundrum/cookienundrum.css"/>
 <script type="text/javascript" src="https://nikksno.github.io/cookienundrum/cookienundrum.js"></script>
 <script type="text/javascript">
@@ -93,6 +93,7 @@ cc.initialise({
 		style: "dark",				// other options: "light"
 		bannerPosition: "bottom",		// other options: "top", "push" [not tested with this fork]
 		tagPosition: "bottom-right"		// other options: combine "top" and "bottom" with "left" and "right" separated by a dash like in the example
+		hideprivacysettingstab: true,
 		onlyshowwithineu: true,
 		ipinfodbkey: 'IPInfoDB-API-Key',	// optional, only necessary if "onlyshowwithineu" is set to "true"
 		refreshOnConsent: true,			
