@@ -544,7 +544,7 @@ var cc =
             jQuery('#cc-notification-moreinfo').html(cc.strings.seeDetailsImplicit);
         }
         if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-wrapper h2 span').after('<a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a> | ');
+            jQuery('#cc-notification-wrapper h2 span').after(' | <a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a>');
         }
         jQuery('#cc-notification-moreinfo').click(function () {
             if (jQuery(this).html() == cc.strings.seeDetails || jQuery(this).html() == cc.strings.seeDetailsImplicit) {
