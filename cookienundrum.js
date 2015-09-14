@@ -507,7 +507,7 @@ var cc =
         }
         jQuery('#cc-notification-logo').hide();
         if (cc.settings.privacyPolicy) {
-            jQuery('#cc-notification-moreinfo').prepend('<a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a> | ');
+            jQuery('#cc-notification-moreinfo').before('<a href="' + cc.strings.privacyPolicyLink + '">' + cc.strings.privacyPolicy + '</a> | ');
         }
         jQuery('#cc-notification').addClass(cc.settings.style).addClass(cc.settings.bannerPosition);
         bannerh = jQuery('#cc-notification').height();
