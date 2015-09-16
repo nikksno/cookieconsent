@@ -37,7 +37,7 @@ Limitations
 Keep in mind
 --------
 
-All of the changes from the original cc v1 are still being worked on and - as for now at least - it's only me on the project and as you might expect I'm working on it in my spare time. New changes may break the plugin on your site at any time. If you're using it on production websites [like I am] be sure to subscribe to notifications for new pushes to the repo [HowTo here](https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository/). If you can contribute to the project in any way please consider doing so: any help is very much appreciated. Thanks!
+All of the changes from the original cc v1 are still being worked on and - as for now at least - it's only me on the project and as you might expect I'm working on it in my spare time. New changes may break the plugin on your site at any time. If you're using it on production websites [like I am] be sure to subscribe to notifications for new pushes to the repo [[HowTo here](https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository/)]. If you can contribute to the project in any way please consider doing so: any help is very much appreciated. Thanks!
 
 Live demo
 --------
@@ -65,7 +65,7 @@ to:
 Full usage
 -----------
 
-If you're the rough tough raw code kind of guy or girl and prefer going through tens of lines of code rather than relying on the fast and simple customizer the Master Creators have provided us with [see above], or in case their website goes down [ya never know!] here is the full code for the widget that you should implement in your website [headers already changed to point to this project rather than the original cc v1] with all of the non default options so as to fulfill your picky and control seaking developer attitude. Feel free to remove the lines corresponding to any custom option you don't want and to change the strings used throughout the widget: the function descriptions are followed by the default texts [in brackets] in the string arguments themselves [you're welcome]. Have fun and don't forget to make it your own!
+If you're the rough tough raw code kind of guy or girl and prefer going through tens of lines of code rather than relying on the fast and simple customizer the Master Creators have provided us with [see above], or in case their website goes down [ya never know!] here is the full code for the widget that you should implement in your website [headers already changed to point to this project rather than the original cc v1] [all of the default values specified] so as to fulfill your picky and control seaking developer attitude. Feel free to remove the lines corresponding to any custom option you don't want and to change the strings used throughout the widget: the function descriptions are followed by the default texts [in brackets] in the string arguments themselves [you're welcome]. Have fun and don't forget to make it your own!
 
 Important! The design changes I've made from the original cc v1 have only been tested by me on the "bottom bar" style [already selected via custom option in the code below]. You're free to try using the "top" [or even better: the "scroll from top" option] but do so at your own risk. Found something that doesn't work with these other styles? Help improve the project either by opening an issue or by fixing it yourself if you're so inclined! Thanks! :)
 
@@ -103,17 +103,30 @@ cc.initialise({
 			link: 'My custom cookie link'
 		}
 	settings: {
-		consenttype: "explicit",		// other options: "implicit"
-		style: "dark",				// other options: "light"
-		bannerPosition: "bottom",		// other options: "top", "push" [not tested with this fork]
-		tagPosition: "bottom-right"		// other options: combine "top" and "bottom" with "left" and "right" separated by a dash like in the example
-		hideprivacysettingstab: true,
-		onlyshowwithineu: true,
-		ipinfodbkey: 'IPInfoDB-API-Key',	// optional, only necessary if "onlyshowwithineu" is set to "true"
-		refreshOnConsent: true,			
-		ignoreDoNotTrack: true,
-		disableallsites: true,
-		useSSL: true
+        	style: "dark",				// other options: "light"
+        	bannerPosition: "bottom",		// other options: "top", "push" [not tested in this version]
+        	clickAnyLinkToConsent: true,		// if TRUE clicking any link on the page will accept cookies
+        	scrollToConsent: true,			// if TRUE scrolling the page will accept cookies
+        	cookiePolicy: true,			// show link to cookie policy in the banner
+        	iubendaCP: false,			// show link to iubenda cookie policy overlay in the banner [work in progress] [overrides the cookiePolicy setting by disabling it] [requires iubenda setup - see readme]
+        	moreInfo: true,				// show link to cookie settings in the banner
+        	refreshOnConsent: false,		// if TRUE accepting cookies will refresh the page
+        	collectStatistics: false,		// collect statistics
+        	tagPosition: 'bottom-right',		// other options: combine "bottom" and "vertical" with "left" and "right" separated by a dash [like in the example]
+        	useSSL: true,				// will be removed in future version by making it always TRUE
+        	serveraddr: 'http://cookieconsent.silktide.com/', // don't edit this one
+        	clearprefs: false,			// no clue for now as to what this does
+        	consenttype: 'explicit',		// if TRUE the visitor must accept before cookies are installed [only required in certain countries] [see readme for correct implementation instructions]
+        	onlyshowbanneronce: false,		// if FALSE the banner will display on every subsequent page visit until it is dismissed by the visitor [only valid if consenttype is IMPLICIT]
+        	hideallsitesbutton: false,		// if TRUE the "Accept cookies on all sites" button is hidden
+        	disableallsites: false,			// if TRUE all options related to the "All sites" feature are disabled
+        	hideprivacysettingstab: false,		// if TRUE the cooke settings tab is disabled
+        	scriptdelay: 800,			// script execution delay
+        	testmode: false,			// other options: "accept", "decline". For test use only.
+        	overridewarnings: false,		// setup help for devs
+        	onlyshowwithineu: false,		// attempt to locate visitor and display banner accordingly
+        	ipinfodbkey: false,			// only required if onlyshowwithineu is set to TRUE
+        	ignoreDoNotTrack: false			// ignore DoNotTrack headers from the visitor's browser
 	},
 	strings: {
 		socialDefaultTitle: 'Social media title [Social med,ia]',
