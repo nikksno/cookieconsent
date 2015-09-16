@@ -22,9 +22,9 @@ Improvementes over cc v1
 
 * Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
 * Implements lucagentile's awesome scrollToConsent functionality [[link to commit](https://github.com/lucagentile/cookieconsent/commit/d494ecd55ece270d9ff9424410f3461949ce6bdc)]
-* Fixes the privacyPolicy setting saving it from the limbo it had fallen into in the original code [renamed to cookiePolocy]
-* Adds the option to show either the cookiePolocy link or the moreInfo panel link or both
-* Adds compatibility with Iubenda's awesome cookie policy solution as an alternative to the standard cookiePolicy link [work in progress]
+* Fixes the privacyPolicy setting saving it from the limbo it had fallen into in the original code [renamed to cookiePolicy]
+* Adds the option to show either the cookiePolicy link or the moreInfo panel link or both
+* Adds compatibility with Iubenda's awesome cookie policy solution as an alternative to the standard cookiePolicy link without the need to use their uber-invasive banner that drops down right in front of your site's headings [work in progress]
 
 Limitations
 --------
