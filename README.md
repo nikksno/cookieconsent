@@ -17,6 +17,13 @@ Features
 * Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
 * Is awesome. Period.
 
+Improvementes over cc v1
+--------
+
+* Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
+* Implements lucagentile's awesome scrollToConsent functionality [https://github.com/lucagentile/cookieconsent/commit/d494ecd55ece270d9ff9424410f3461949ce6bdc]
+* 
+
 Limitations
 --------
 
