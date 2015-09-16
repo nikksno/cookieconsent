@@ -37,7 +37,7 @@ Limitations
 Keep in mind
 --------
 
-All of the changes from the original cc v1 are still being worked on and - as for now at least - it's only me on the project and as you might expect I'm working on it in my spare time. New changes may break the plugin on your site at any time. If you're using it on production websites [like I am] be sure to subscribe to notifications for new pushes to the repo (HowTo here)[https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository/]. If you can contribute to the project in any way please consider doing so: any help is very much appreciated. Thanks!
+All of the changes from the original cc v1 are still being worked on and - as for now at least - it's only me on the project and as you might expect I'm working on it in my spare time. New changes may break the plugin on your site at any time. If you're using it on production websites [like I am] be sure to subscribe to notifications for new pushes to the repo [HowTo here](https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository/). If you can contribute to the project in any way please consider doing so: any help is very much appreciated. Thanks!
 
 Live demo
 --------
