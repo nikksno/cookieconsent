@@ -180,7 +180,9 @@ Credits
 
 Original cc v1 by SilkTide
 Fork created and maintained by me with virtually all improvements
+
 scrollToConsent functionality and further inspiration by @[lucagentile](https://github.com/lucagentile)
+
 Future features and awesomeness by you! Join us! :)
 
 Poetic inspiration
