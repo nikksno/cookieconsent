@@ -178,13 +178,11 @@ cc.initialise({
 Credits
 -------
 
-Original cc v1 by SilkTide
-Fork created and maintained by me with virtually all improvements
-
-scrollToConsent functionality and further inspiration by @[lucagentile](https://github.com/lucagentile)
-
+Original cc v1 by SilkTide  
+Fork created and maintained by me with virtually all improvements  
+scrollToConsent functionality and further inspiration by @[lucagentile](https://github.com/lucagentile)  
 Future features and awesomeness by you! Join us! :)
 
 Poetic inspiration
 --------
-> Pleasant it is, when over a great sea the winds trouble the waters, to gaze from shore upon another's tribulation: not because any man's troubles are a delectable joy, but because to perceive from what ills you are free yourself is pleasant. – Lucretius, De Rerum Natura
+> Pleasant it is, when over a great sea the winds trouble the waters, to gaze from shore upon another's tribulation: not because any man's troubles are a delectable joy, but because to perceive from what ills you are free yourself is pleasant. – Lucretius | De Rerum Natura
