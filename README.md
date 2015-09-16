@@ -22,7 +22,9 @@ Improvementes over cc v1
 
 * Liberally backports [cookieconsent v2](https://github.com/silktide/cookieconsent2)'s responsive and elegant design
 * Implements lucagentile's awesome scrollToConsent functionality [[link to commit](https://github.com/lucagentile/cookieconsent/commit/d494ecd55ece270d9ff9424410f3461949ce6bdc)]
-* 
+* Fixes the privacyPolicy setting saving it from the limbo it had fallen into in the original code [renamed to cookiePolocy]
+* Adds the option to show either the cookiePolocy link or the moreInfo panel link or both
+* Adds compatibility with Iubenda's awesome cookie policy solution as an alternative to the standard cookiePolicy link [work in progress]
 
 Limitations
 --------
@@ -31,6 +33,11 @@ Limitations
 * Doesn't implement cc v2's themeability [woah, new words all the time!]
 * Has a bunch of unused vestigial code left over from the original cc
 * Wanna fix this stuff? Have at it and go nuts!
+
+Keep in mind
+--------
+
+All of the changes from the original cc v1 are still being worked on and - as for now at least - it's only me on the project and as you might expect I'm working on it in my spare time. New changes may break the plugin on your site at any time. If you're using it on production websites [like I am] be sure to subscribe to notifications for new pushes to the repo (HowTo here)[https://help.github.com/articles/receiving-email-notifications-for-pushes-to-a-repository/]. If you can contribute to the project in any way please consider doing so: any help is very much appreciated. Thanks!
 
 Live demo
 --------
@@ -157,4 +164,8 @@ cc.initialise({
 
 Credits
 -------
-Created by [Silktide](http://silktide.com).
+
+Original cc v1 by SilkTide
+Fork created and maintained by me with virtually all improvements
+scrollToConsent functionality and further inspiration by @[lucagentile](https://github.com/lucagentile)
+Future features and awesomeness by you! Join us! :)
