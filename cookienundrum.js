@@ -1287,7 +1287,7 @@ var cc =
               'right':'20px',
        });
     }
-}
+},
 
 if (!(window.jQuery)) {
     var s = document.createElement('script');
