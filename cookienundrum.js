@@ -1341,4 +1341,4 @@ adaptbannerheight: function () {
            jQuery('#cc-notification ul.cc-notification-buttons').css({
               'right':'20px',
        })
-}
+},
