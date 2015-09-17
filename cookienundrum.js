@@ -500,6 +500,11 @@ var cc =
         if (cc.settings.hideallsitesbutton) {
             jQuery('#cc-approve-button-allsites').hide();
         }
+        
+        if (cc.settings.scrollToConsent) {
+            jQuery('#cc-notification ul.cc-notification-buttons').hide();
+        }
+        
         if (cc.settings.consenttype == 'implicit') {
             jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
             jQuery('#cc-approve-button-thissite').html(cc.strings.allowCookiesImplicit);
@@ -1296,10 +1301,6 @@ var cc =
     },
     
     **/
-    
-    if (cc.settings.scrollToConsent) {
-            jQuery('#cc-notification ul.cc-notification-buttons').hide();
-        }
  
     afterload: function () {
         jQuery('.cc-button-enableall').addClass('cc-link').click(cc.onlocalconsentgiven);
