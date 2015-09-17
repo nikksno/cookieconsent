@@ -1277,6 +1277,8 @@ var cc =
         }
     },
     
+    /**
+    
     adaptbannerheight: function () {
        if (cc.settings.scrollToConsent) {
        var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
@@ -1284,6 +1286,14 @@ var cc =
        if ( $bannerHeight > $bpHeight) {
            jQuery('#cc-notification ul.cc-notification-buttons')[0].css('right', '12px');
        }
+       }
+    },
+    
+    **/
+    
+    adaptbannerheight: function () {
+       if (cc.settings.scrollToConsent) {
+       jQuery('#cc-notification ul.cc-notification-buttons')[0].css('right', '12px');
        }
     },
  
