@@ -501,10 +501,13 @@ var cc =
             jQuery('#cc-approve-button-allsites').hide();
         }
        
-       if (cc.settings.scrollToConsent) {
+       var bannerHeight = document.getElementById('cc-notification').offsetHeight;
+       var bpHeight = 58;
+       
+       if ($bannerHeight > $bpHeight) {
        jQuery('#cc-notification ul.cc-notification-buttons').css('right', '12px');
        }
-        
+       
         if (cc.settings.consenttype == 'implicit') {
             jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
             jQuery('#cc-approve-button-thissite').html(cc.strings.allowCookiesImplicit);
