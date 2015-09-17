@@ -502,7 +502,7 @@ var cc =
         }
         
         if (cc.settings.scrollToConsent) {
-            jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px !important');
+            jQuery('#cc-notification ul.cc-notification-buttons').css('right', '12px !important');
        }
         
         if (cc.settings.consenttype == 'implicit') {
