@@ -1334,8 +1334,10 @@ WebFontConfig = {
  * Increase buttons bar right margin if banner height increases to accomodate two text lines
 **/
 
-var $bannerHeight = $('#cc-notification').height();
-var $bpHeight = 58;
+var bannerHeight = $('#cc-notification').height();
+var bpHeight = 58;
 if ( $bannerHeight > $bpHeight) {
-    jQuery('#cc-notification ul.cc-notification-buttons').animate({right: "42px"}, 400);
+    jQuery('#cc-notification ul.cc-notification-buttons').css({
+     'right':'20px',
+    })
 }
