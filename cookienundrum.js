@@ -1271,11 +1271,19 @@ var cc =
         cc.checkapproval();
     },
     
+    reloadifnecessary: function () {
+        if (cc.settings.refreshOnConsent || cc.ismobile || cc.forcereload) {
+            setTimeout("location.reload(true);", 50);
+        }
+    },
+    
     adaptbannerheight: function () {
+       if (cc.settings.scrollToConsent) {
        var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
        var bpHeight = 58;
        if ( $bannerHeight > $bpHeight) {
            jQuery('#cc-notification ul.cc-notification-buttons')[0].css('right', '12px');
+       }
        }
     },
  
