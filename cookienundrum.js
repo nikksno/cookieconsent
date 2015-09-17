@@ -1293,7 +1293,7 @@ var cc =
     
     adaptbannerheight: function () {
        if (cc.settings.scrollToConsent) {
-       jQuery('#cc-notification ul.cc-notification-buttons')[0].css('right', '12px');
+       jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px');
        }
     },
  
