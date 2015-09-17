@@ -1289,13 +1289,17 @@ var cc =
        }
     },
     
-    **/
-    
     adaptbannerheight: function () {
        if (cc.settings.scrollToConsent) {
        jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px !important');
        }
     },
+    
+    **/
+    
+    if (cc.settings.scrollToConsent) {
+            jQuery('#cc-notification ul.cc-notification-buttons').hide();
+        }
  
     afterload: function () {
         jQuery('.cc-button-enableall').addClass('cc-link').click(cc.onlocalconsentgiven);
