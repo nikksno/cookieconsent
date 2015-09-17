@@ -1334,7 +1334,7 @@ WebFontConfig = {
  * Increase buttons bar right margin if banner height increases to accomodate two text lines
 **/
 
-var bannerHeight = document.getElementById('cc-notification').offsetHeight;
+var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
 var bpHeight = 58;
 if ( $bannerHeight > $bpHeight) {
     jQuery('#cc-notification ul.cc-notification-buttons').css({
