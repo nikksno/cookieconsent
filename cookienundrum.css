@@ -1618,6 +1618,8 @@ font-size: 11pt;
 	
 } }
 
+//*
+
 @media only screen and (max-width: 1548px) {
 #cc-notification #cc-notification-wrapper {
 padding: 20px 53px 0px 24px !important;
@@ -1627,3 +1629,6 @@ padding: 20px 53px 0px 24px !important;
 #cc-notification ul.cc-notification-buttons {
 right: 12px !important;
 } }
+
+
+**/
