@@ -709,7 +709,7 @@ DARK STYLE
 #cc-notification ul.cc-notification-buttons
 {
 	position: absolute !important;
-	right: 0 !important;
+	right: 0px;
 	top: 50% !important;
 	transform: translateY(-50%);
 	width: 164px !important;
