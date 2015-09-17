@@ -500,9 +500,13 @@ var cc =
         if (cc.settings.hideallsitesbutton) {
             jQuery('#cc-approve-button-allsites').hide();
         }
-        
-        if (cc.settings.scrollToConsent) {
-            jQuery('#cc-notification ul.cc-notification-buttons').css('right', '12px');
+       
+       if (cc.settings.scrollToConsent) {
+       var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
+       var bpHeight = 58;
+       if ( $bannerHeight > $bpHeight) {
+       jQuery('#cc-notification ul.cc-notification-buttons').css('right', '12px');
+       }
        }
         
         if (cc.settings.consenttype == 'implicit') {
