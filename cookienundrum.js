@@ -1277,6 +1277,15 @@ var cc =
         jQuery.each(cc.cookies, function (key, value) {
             jQuery('.cc-button-enable-' + key).addClass('cc-link').click(cc.onlocalconsentgiven);
         });
+    },
+    
+    adaptbannerheight: function () {
+       var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
+       var bpHeight = 58;
+       if ( $bannerHeight > $bpHeight) {
+           jQuery('#cc-notification ul.cc-notification-buttons').css({
+              'right':'20px',
+       });
     }
 }
 
@@ -1333,12 +1342,3 @@ WebFontConfig = {
  * Added by nikksno
  * Increase buttons bar right margin if banner height increases to accomodate two text lines
 **/
-
-(function () {
-       var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
-       var bpHeight = 58;
-       if ( $bannerHeight > $bpHeight) {
-           jQuery('#cc-notification ul.cc-notification-buttons').css({
-              'right':'20px',
-       })
-})(),
