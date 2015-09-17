@@ -1270,6 +1270,17 @@ var cc =
         setTimeout(cc.afterload, 50);
         cc.checkapproval();
     },
+    
+    adaptbannerheight: function () {
+       var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
+       var bpHeight = 58;
+       if ( $bannerHeight > $bpHeight) {
+           jQuery('#cc-notification ul.cc-notification-buttons').css({
+              'right':'20px',
+           });
+       },
+       },
+ 
 
     afterload: function () {
         jQuery('.cc-button-enableall').addClass('cc-link').click(cc.onlocalconsentgiven);
