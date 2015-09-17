@@ -502,8 +502,8 @@ var cc =
         }
         
         if (cc.settings.scrollToConsent) {
-            jQuery('#cc-notification ul.cc-notification-buttons').hide();
-        }
+            jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px !important');
+       }
         
         if (cc.settings.consenttype == 'implicit') {
             jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
