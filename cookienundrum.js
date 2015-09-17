@@ -1293,11 +1293,10 @@ var cc =
     
     adaptbannerheight: function () {
        if (cc.settings.scrollToConsent) {
-       jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px');
+       jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px !important');
        }
     },
  
-
     afterload: function () {
         jQuery('.cc-button-enableall').addClass('cc-link').click(cc.onlocalconsentgiven);
         jQuery('.cc-button-enable-all').addClass('cc-link').click(cc.onlocalconsentgiven);
