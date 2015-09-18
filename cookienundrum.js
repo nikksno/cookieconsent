@@ -500,7 +500,12 @@ var cc =
         if (cc.settings.hideallsitesbutton) {
             jQuery('#cc-approve-button-allsites').hide();
         }
-       
+        
+        /**
+        * Added by nikksno
+        * Increase buttons bar right margin if banner height increases to accomodate two text lines
+        **/
+
        bannerHeight = jQuery('#cc-notification').outerHeight();
        bpHeight = 60;
        
@@ -512,7 +517,7 @@ var cc =
                'padding' : '20px 53px 0px 24px',
            });
        }
-       
+        
         if (cc.settings.consenttype == 'implicit') {
             jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
             jQuery('#cc-approve-button-thissite').html(cc.strings.allowCookiesImplicit);
@@ -1283,33 +1288,7 @@ var cc =
         setTimeout(cc.afterload, 50);
         cc.checkapproval();
     },
-    
-    reloadifnecessary: function () {
-        if (cc.settings.refreshOnConsent || cc.ismobile || cc.forcereload) {
-            setTimeout("location.reload(true);", 50);
-        }
-    },
-    
-    /**
-    
-    adaptbannerheight: function () {
-       if (cc.settings.scrollToConsent) {
-       var bannerHeight = document.getElementById('cc-notification')[0].offsetHeight;
-       var bpHeight = 58;
-       if ( $bannerHeight > $bpHeight) {
-           jQuery('#cc-notification ul.cc-notification-buttons')[0].css('right', '12px');
-       }
-       }
-    },
-    
-    adaptbannerheight: function () {
-       if (cc.settings.scrollToConsent) {
-       jQuery('#cc-notification ul.cc-notification-buttons').html('').css('right', '12px !important');
-       }
-    },
-    
-    **/
- 
+
     afterload: function () {
         jQuery('.cc-button-enableall').addClass('cc-link').click(cc.onlocalconsentgiven);
         jQuery('.cc-button-enable-all').addClass('cc-link').click(cc.onlocalconsentgiven);
@@ -1367,8 +1346,3 @@ WebFontConfig = {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
 })();
-
-/**
- * Added by nikksno
- * Increase buttons bar right margin if banner height increases to accomodate two text lines
-**/
