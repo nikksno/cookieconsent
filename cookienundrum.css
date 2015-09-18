@@ -751,7 +751,7 @@ DARK STYLE
 
 #cc-notification #cc-notification-wrapper
 {
-	padding: 20px 38px 0px 24px !important;
+	padding: 20px 38px 0px 24px;
 }
 
 #cc-notification #cc-notification-permissions ul
