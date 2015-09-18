@@ -503,7 +503,6 @@ var cc =
        
        bannerHeight = jQuery('#cc-notification').outerHeight();
        wrapperHeight = jQuery('#cc-notification-wrapper').height();
-       alert(wrapperHeight);
        bpHeight = 60;
        
        if (bannerHeight > bpHeight) {
