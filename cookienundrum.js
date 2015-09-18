@@ -506,18 +506,18 @@ var cc =
         * Increase buttons bar right margin if banner height increases to accomodate two text lines
         **/
 
-       bannerHeight = jQuery('#cc-notification').outerHeight();
-       bpHeight = 60;
-       
-       if (bannerHeight > bpHeight) {
-           jQuery('#cc-notification ul.cc-notification-buttons').css({
-               'right' : '12px',
-           });
-           jQuery('#cc-notification #cc-notification-wrapper').css({
-               'padding' : '20px 53px 0px 24px',
-           });
-       }
+        bannerHeight = jQuery('#cc-notification').outerHeight();
+        bpHeight = 60;
         
+        if (bannerHeight > bpHeight) {
+            jQuery('#cc-notification ul.cc-notification-buttons').css({
+                'right' : '12px',
+            });
+            jQuery('#cc-notification #cc-notification-wrapper').css({
+                'padding' : '20px 53px 0px 24px',
+            });
+         }
+       
         if (cc.settings.consenttype == 'implicit') {
             jQuery('#cc-notification h2 span').html(cc.strings.notificationTitleImplicit);
             jQuery('#cc-approve-button-thissite').html(cc.strings.allowCookiesImplicit);
