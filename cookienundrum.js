@@ -507,6 +507,8 @@ var cc =
        if (bannerHeight > bpHeight) {
            jQuery('#cc-notification ul.cc-notification-buttons').css({
                'right' : '12px',
+           });
+           jQuery('#cc-notification #cc-notification-wrapper').css({
                'padding' : '20px 53px 0px 24px',
            });
        }
