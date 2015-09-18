@@ -501,7 +501,7 @@ var cc =
             jQuery('#cc-approve-button-allsites').hide();
         }
        
-       var bennerHeight = jQuery("#cc-notification")[0].height();
+       var bannerHeight = document.getElementById('#cc-notification')[0].offsetHeight;
        var bpHeight = 58;
        
        if ($bannerHeight > $bpHeight) {
