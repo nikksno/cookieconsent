@@ -502,11 +502,13 @@ var cc =
         }
        
        bannerHeight = jQuery('#cc-notification').outerHeight();
-       wrapperHeight = jQuery('#cc-notification-wrapper').height();
        bpHeight = 60;
        
        if (bannerHeight > bpHeight) {
-       jQuery('#cc-notification ul.cc-notification-buttons').css('right', '12px');
+           jQuery('#cc-notification ul.cc-notification-buttons').css({
+               'right', '12px',
+               'padding' : '20px 53px 0px 24px',
+           });
        }
        
         if (cc.settings.consenttype == 'implicit') {
