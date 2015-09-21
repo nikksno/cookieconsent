@@ -4,7 +4,7 @@
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.fu
+ (at your option) any later version.
 
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -587,17 +587,9 @@ var cc =
             return false;
         });
 
-        if (cc.settings.cookiePolicy) {
-         
-         /**
-        * Added by nikksno
-        * Increase buttons bar right margin if banner height increases to accomodate two text lines
-        **/
-
         bannerHeight = jQuery('#cc-notification').outerHeight();
         alert(bannerHeight)
         bpHeight = 60;
-        
         if (bannerHeight > bpHeight) {
             jQuery('#cc-notification ul.cc-notification-buttons').css({
                 'right' : '12px',
@@ -606,7 +598,6 @@ var cc =
                 'padding' : '20px 53px 0px 24px',
             });
          };
-        }
 
         if (!cc.ismobile) {
             if (cc.settings.bannerPosition == "cc-push") {
