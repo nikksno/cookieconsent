@@ -709,12 +709,16 @@ DARK STYLE
 #cc-notification ul.cc-notification-buttons
 {
 	position: absolute !important;
-	right: 2px;
-	top: 49% !important;
+	right: 0px;
+	top: 50% !important;
 	-ms-transform: translateY(-50%);
     	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	width: 164px !important;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-content: center;
+	padding-left: 14px;
 }
 #cc-notification #cc-notification-wrapper
 {
@@ -920,20 +924,21 @@ DARK STYLE
 #cc-notification ul.cc-notification-buttons li a:visited
 {
 	margin-top: 8px !important;
-	margin-bottom: 6px !important;
+	margin-bottom: 8px !important;
 	display: block;
 	padding: 8px 16px !important;
 	background-color: #f1d600 !important;
 	color: #111 !important;
-	margin-right: 12px !important;
+	margin-right: 14px !important;
 	text-decoration: none !important;
-	font-size:12pt !important;
+	font-size: 12pt !important;
 	font-weight: 400 !important;
-	letter-spacing: -0.05em;
-
-	border-radius: 5px !important;
-	-moz-border-radius: 5px !important;
-	-webkit-border-radius: 5px !important;
+	letter-spacing: -0.01em;
+	text-align: center;
+	
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
 
 	/*box-shadow:1px 1px 2px #000;*/
 	/*-moz-box-shadow:1px 1px 2px #000;*/
