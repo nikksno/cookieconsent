@@ -4,7 +4,7 @@
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
- (at your option) any later version.
+ (at your option) any later version.fu
 
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -542,27 +542,6 @@ var cc =
         });
         
         if (cc.settings.cookiePolicy) {
-         
-         /**
-        * Added by nikksno
-        * Increase buttons bar right margin if banner height increases to accomodate two text lines
-        **/
-
-        bannerHeight = jQuery('#cc-notification').outerHeight();
-        alert(bannerHeight)
-        bpHeight = 60;
-        
-        if (bannerHeight > bpHeight) {
-            jQuery('#cc-notification ul.cc-notification-buttons').css({
-                'right' : '12px',
-            });
-            jQuery('#cc-notification #cc-notification-wrapper').css({
-                'padding' : '20px 53px 0px 24px',
-            });
-         };
-        }
-        
-        if (cc.settings.cookiePolicy) {
             jQuery('#cc-notification-wrapper h2 span').after(' | <a id="cookiePolicy-link" href="' + cc.strings.cookiePolicyLink + '" target="_blank">' + cc.strings.cookiePolicy + '</a>');
         }
         if (cc.settings.moreInfo) {
@@ -607,6 +586,27 @@ var cc =
             jQuery(this).blur();
             return false;
         });
+
+        if (cc.settings.cookiePolicy) {
+         
+         /**
+        * Added by nikksno
+        * Increase buttons bar right margin if banner height increases to accomodate two text lines
+        **/
+
+        bannerHeight = jQuery('#cc-notification').outerHeight();
+        alert(bannerHeight)
+        bpHeight = 60;
+        
+        if (bannerHeight > bpHeight) {
+            jQuery('#cc-notification ul.cc-notification-buttons').css({
+                'right' : '12px',
+            });
+            jQuery('#cc-notification #cc-notification-wrapper').css({
+                'padding' : '20px 53px 0px 24px',
+            });
+         };
+        }
 
         if (!cc.ismobile) {
             if (cc.settings.bannerPosition == "cc-push") {
