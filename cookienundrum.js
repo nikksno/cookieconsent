@@ -588,8 +588,7 @@ var cc =
         });
 
         bannerHeight = jQuery('#cc-notification').outerHeight();
-        alert(bannerHeight)
-        bpHeight = 60;
+        bpHeight = 64;
         if (bannerHeight > bpHeight) {
             jQuery('#cc-notification ul.cc-notification-buttons').css({
                 'right' : '12px',
